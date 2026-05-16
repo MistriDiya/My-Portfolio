@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diya Mistri | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#111;
+}
+
+/* Welcome Animation */
+
+.welcome-screen{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:9999;
+    animation:hideScreen 4s forwards;
+}
+
+.welcome-screen h1{
+    font-size:42px;
+    margin:10px 0;
+}
+
+@keyframes hideScreen{
+    0%,85%{
+        opacity:1;
+        visibility:visible;
+    }
+    100%{
+        opacity:0;
+        visibility:hidden;
+    }
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:22px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    background:#fff;
+    z-index:1000;
+    border-bottom:1px solid #eee;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#111;
+    font-weight:500;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.linkedin-top{
+    font-size:24px;
+    color:#0077b5;
+    text-decoration:none;
+}
+
+.resume-btn{
+    background:#111;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 8%;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.hero .btn{
+    background:#111;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+}
+
+/* SECTION */
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:35px 20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* EXPERIENCE */
+
+.exp-card,
+.project-card{
+    background:#111;
+    color:#fff;
+    padding:30px;
+    border-radius:14px;
+    margin-bottom:25px;
+}
+
+.exp-card p,
+.project-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+/* ABOUT */
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    color:#444;
+    font-size:18px;
+}
+
+/* CONTACT ICONS */
+
+.contact-icons{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.contact-icons a{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+    color:#fff;
+    font-size:24px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.contact-icons a:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #eee;
+    margin-top:30px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .welcome-screen h1{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Welcome Screen -->
+
+<!-- Simple Welcome Screen -->
+
+<div class="welcome-screen">
+    <h1>Welcome | સ્વાગત | Namaste  </h1>
+</div>
+
+<style>
+.welcome-screen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    animation: hideWelcome 3s forwards;
+}
+
+@keyframes hideWelcome {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+</style>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">Diya Mistri</div>
+
+    <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+        </a>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div>
+        <h1>Hello, I'm Diya Mistri</h1>
+        <p>B.Tech Computer Engineering Student | UI/UX Designer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card"><h3>HTML</h3></div>
+        <div class="skill-card"><h3>CSS</h3></div>
+        <div class="skill-card"><h3>Canva</h3></div>
+        <div class="skill-card"><h3>Figma</h3></div>
+        <div class="skill-card"><h3>UI/UX Design</h3></div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="exp-card">
+        <h3>Web Design Intern</h3>
+        <p>
+            METS INFOTECH PVT LTD, V V Nagar<br>
+            Sep 2022 - Sep 2022 (2 Weeks)
+        </p>
+        <br>
+        <p>
+            Designed posters and visiting cards in publisher with Hyperlink connectivity.
+        </p>
+        <br>
+
+        <h3>Database Intern</h3>
+        <p>
+            HATKESH INFOTECH PVT LTD, V V Nagar<br>
+            July 2023 – Aug 2023 (4 Weeks)
+        </p>
+        <br>
+        <p>
+            Worked on SQL database management. Created tables using Primary Key and Foreign Key
+            implementation and assisted with database connection and system organization.<br>
+        </p>
+        <br>
+        <h3>UI/UX Designer Intern </h3>
+        <p>
+            JINARTH INFOTECH, V V Nagar,Anand<br>
+            May 2026- Jun 2026 (4 Weeks ) 
+        </p>
+        <br>
+        <p>
+            During my UI/UX internship, I worked on wireframing, color
+            typography, and designing login pages, sign-up pages, and home
+            pages for websites. I also learned how to create complete website
+            designs with better user experience and modern UI concepts.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+        I am a passionate Computer Engineering student currently pursuing
+        B.Tech from CVM University. I completed my Diploma in Computer
+        Engineering from IIET Dharmaj, GTU University with CGPA 7.77 and 
+        I am currently pursuing my B.Tech from CVM University.
+        I am interested in UI/UX Design. <br>
+
+        <br>
+        I enjoy creating user-friendly designs, learning new technologies,
+        and improving my technical skills every day. I am hardworking,
+        dedicated, and always ready to take on new challenges that help me
+        grow both personally and professionally.
+        <br>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <h2 class="section-title">My Academic Projects</h2>
+
+    <div class="project-card">
+        <h3>MindCare AI - Mental health WebApplication</h3>
+        <p>
+            MindCare AI is a cross-platform student mental health and academic
+            support application developed using Flutter and SharedPreferences.
+            It offers AI-powered emotional support, anonymous counselor
+            appointment booking, mood tracking, consultation sessions,
+            and admin management completely offline.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>Music Playlist Organizer</h3>
+        <p>
+            Developed a C++ menu-driven application to add, remove,
+            and display songs in a playlist using programming concepts.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<!-- CONTACT -->
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-box">
+        <p><strong>Email:</strong> 
+            <a href="mailto:mistridiya12@gmail.com">
+            mistridiya12@gmail.com
+        </a>
+        <p><strong>Phone:</strong> +91 8128205742</p>
+        <p><strong>Location:</strong> Petlad, Anand</p>
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/diya-mistri-5408b3381/"target="_blank">
+                Mistri Diya 
+            </a>
+        </p>
+    </div>
+</section>
+
+<style>
+/* Contact Me Center */
+
+#contact {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contact-box p {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: black;
+}
+</style>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 Diya Mistri | Portfolio Website
+</footer>
+
+</body>
+</html>
